@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Diary App</title>
+</head>
+<body>
+    <h1>Diary App by Django</h1>
+    {% for diary in diary_list %}
+    <p>
+        {{ diary.date }}
+        {{ diary.title }}
+    </p>
+    {% endfor %}
+    <a href="{% url 'diary:index' %}">トップへ戻る</a>
+</body>
+</html>

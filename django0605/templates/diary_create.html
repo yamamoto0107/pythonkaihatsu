@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Diary App</title>
+</head>
+<body>
+    <h1>Diary App by Django</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">投稿</button>
+    </form>
+</body>
+
+</html>
